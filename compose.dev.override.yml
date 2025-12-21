@@ -1,0 +1,18 @@
+services:
+  api:
+    env_file:
+      - .env
+    environment:
+      APP_ENV: dev
+    volumes:
+      - .:/app
+    
+  api-cache:
+      ports:
+      - "${CACHE_PORT:-6379}:6379"  # For accessing cache directly using own cache client
+
+  db:
+    ports:
+      - "${DB_PORT:-5432}:5432"  # For accessing db directly using own DB client
+    env_file:
+      - .env
