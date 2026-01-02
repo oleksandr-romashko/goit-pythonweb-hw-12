@@ -35,6 +35,10 @@ packages = [
 [tool.poetry.group.test.dependencies]
 pytest = "^9.0.2"
 
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^9.1.0"
+
 [tool.pytest]
 pythonpath = ["."]
 addopts = ["-v"]
