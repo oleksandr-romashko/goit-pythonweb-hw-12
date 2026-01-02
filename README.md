@@ -1,6 +1,6 @@
 # Fullstack Web Development with Python <!-- omit in toc -->
 
-### [# goit-pythonweb-hw-10](https://github.com/topics/goit-pythonweb-hw-10) <!-- omit in toc -->
+### [# goit-pythonweb-hw-12](https://github.com/topics/goit-pythonweb-hw-12) <!-- omit in toc -->
 
 <p align="center">
   <img align="center" src="./assets/thumbnail.svg" width="200" title="Project thumbnail" alt="project thumbnail">
@@ -145,10 +145,10 @@ Before you begin, make sure you have the following installed:
 
 1. Clone repository:
     ```bash
-    git clone https://github.com/oleksandr-romashko/goit-pythonweb-hw-10.git
-    cd goit-pythonweb-hw-10
+    git clone https://github.com/oleksandr-romashko/goit-pythonweb-hw-12.git
+    cd goit-pythonweb-hw-12
     ```
-    or download the ZIP archive from [GitHub Repository](https://github.com/oleksandr-romashko/goit-pythonweb-hw-10/) and extract it.
+    or download the ZIP archive from [GitHub Repository](https://github.com/oleksandr-romashko/goit-pythonweb-hw-12/) and extract it.
 2. Install project dependencies:
     ```bash
     poetry install

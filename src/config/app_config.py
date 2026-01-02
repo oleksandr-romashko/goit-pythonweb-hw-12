@@ -112,7 +112,7 @@ class Config:
         .get("text", "Unknown License")
     )
     APP_LICENSE_URL = (
-        "https://github.com/oleksandr-romashko/goit-pythonweb-hw-10/blob/main/LICENSE"
+        "https://github.com/oleksandr-romashko/goit-pythonweb-hw-12/blob/main/LICENSE"
     )
     APP_LICENSE_INFO: Dict = {
         "name": f"{APP_LICENSE_TITLE} License",
