@@ -9,10 +9,16 @@ services:
     
   api-cache:
       ports:
-      - "${CACHE_PORT:-6379}:6379"  # For accessing cache directly using own cache client
+        - "${CACHE_PORT:-6379}:6379"  # For accessing cache directly using own cache client
+      env_file:
+        - .env
 
   db:
     ports:
       - "${DB_PORT:-5432}:5432"  # For accessing db directly using own DB client
+    env_file:
+      - .env
+
+  db-admin-panel:
     env_file:
       - .env
