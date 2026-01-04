@@ -1,0 +1,16 @@
+services:
+  api:
+    env_file:
+      - .env
+    
+  api-cache:
+      env_file:
+        - .env
+
+  db:
+    env_file:
+      - .env
+
+  db-admin-panel:
+    env_file:
+      - .env
