@@ -22,7 +22,8 @@ echo "3) ⚙️  Starting FastAPI..."
 # DEV MODE
 if [ "$APP_ENV" = "dev" ]; then
     echo "🔧 DEV mode detected. Starting FastAPI (DEV mode)..."
-    exec poetry run uvicorn src.main:app \
+    exec poetry run uvicorn \
+        src.main:create_app \
         --reload \
         --host 0.0.0.0 \
         --port 8000 \
@@ -31,7 +32,8 @@ fi
 
 # PROD MODE
 echo "🚀 PROD mode detected. Starting FastAPI (PROD mode)..."
-exec poetry run uvicorn src.main:app \
+exec poetry run uvicorn \
+    src.main:create_app \
     --host 0.0.0.0 \
     --port 8000 \
     --log-level info

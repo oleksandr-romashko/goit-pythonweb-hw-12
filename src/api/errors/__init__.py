@@ -1,3 +1,5 @@
+"""Package for helpers handling http errors"""
+
 from .http_errors import (
     raise_http_400_error,
     raise_http_401_error,

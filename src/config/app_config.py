@@ -122,7 +122,8 @@ class Config:
     # === API & docs web server settings ===
 
     WEB_PORT = int(os.getenv("WEB_PORT", default="8000"))
-    STATIC_DIR = "static"
+    STATIC_DIR_NAME = "static"
+    STATIC_DIR = BASE_DIR / STATIC_DIR_NAME
     EMAIL_VERIFICATION_REDIRECT_URL = os.getenv(
         "EMAIL_VERIFICATION_REDIRECT_URL", default=""
     ).strip()

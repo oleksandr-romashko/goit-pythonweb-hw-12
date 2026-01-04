@@ -25,4 +25,4 @@ async def get_root() -> RedirectResponse:
 @router.get("/favicon.ico", include_in_schema=False)
 async def favicon() -> FileResponse:
     """Serve the favicon.ico file."""
-    return FileResponse(f"{app_config.STATIC_DIR}/images/favicon.ico")
+    return FileResponse(app_config.STATIC_DIR / "images" / "favicon.ico")
