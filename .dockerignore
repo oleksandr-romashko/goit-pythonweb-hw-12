@@ -62,3 +62,6 @@ asserts/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local-only runners / debug helpers
+src/__main__.py

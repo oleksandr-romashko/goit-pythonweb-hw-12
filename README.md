@@ -58,6 +58,7 @@ The project follows a layered architecture:
       - [4. Connection to the database or redis](#4-connection-to-the-database-or-redis)
       - [5. Start FastAPI application](#5-start-fastapi-application)
       - [6. Access API docs and make API requests](#6-access-api-docs-and-make-api-requests)
+      - [7. Local debugging](#7-local-debugging)
 - [License](#license)
 
 ## Task Requirements
@@ -241,6 +242,23 @@ Content-Type: application/json
   "password": "strong_password"
 }
 ```
+
+##### 7. Local debugging
+
+1. Start infrastructure:
+    ```shell
+    make dev
+    ```
+2. Stop API container:
+    ```shell
+    make api-stop
+    ```
+3. Set breakpoint(s).
+4. Press `F5` in VS Code or run **API: Debug (local)** profile manually.
+5. When finished, stop debugger and start API container again:
+    ```shell
+    make api-start
+    ```
 
 **Happy coding!**
 

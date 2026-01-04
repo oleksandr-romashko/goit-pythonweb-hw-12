@@ -3,31 +3,37 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug FastAPI server",
+            "name": "API: Debug (local)",
             "type": "debugpy", // VS Code's Python debugger
             "request": "launch",
-            "module": "src.main", // run `python -m src.main`
+            "module": "src", // run as Python module `python -m src`
             "args": [],
             "jinja": true, // enable template debugging (optional)
             "cwd": "${workspaceFolder}", // project root
+            "envFile": "${workspaceFolder}/.env", // load enviromental variables from .env file
             "env": {
-                "PYTHONPATH": "${workspaceFolder}"
+                "PYTHONPATH": "${workspaceFolder}",
+                "APP_ENV": "dev",
+                "DB_HOST": "localhost",
+                "CACHE_HOST": "localhost",
             },
-            "envFile": "${workspaceFolder}/.env", // load .env if you use it
             "console": "integratedTerminal",
             "justMyCode": true
         },
         {
-            "name": "Run FastAPI server (no debug)",
+            "name": "API: Run (local, no debug)",
             "type": "debugpy",
             "request": "launch",
-            "module": "src.main",
+            "module": "src",
             "noDebug": true, // <-- run without debugger
             "cwd": "${workspaceFolder}",
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            },
             "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "APP_ENV": "dev",
+                "DB_HOST": "localhost",
+                "CACHE_HOST": "localhost",
+            },
             "console": "integratedTerminal"
         }
     ]
